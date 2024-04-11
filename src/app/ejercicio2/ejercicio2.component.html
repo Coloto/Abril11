@@ -1,0 +1,24 @@
+<h1>Ejercicio 2</h1>
+
+<div class="caja">
+    <h2>Ingreso de producto a stock</h2>
+    
+    <label for="desc">Descripcion</label>
+    <input type="text" name="desc" [(ngModel)]="desc">
+
+    <label for="codigo">Codigo</label>
+    <input type="text" name="codigo" [(ngModel)]="codigo">
+
+    <label for="costo">Precio Costo</label>
+    <input type="number" name="costo" [(ngModel)]="costo">
+
+    <label for="venta">Precio Venta</label>
+    <input type="number" name="venta" [(ngModel)]="venta">
+
+    <label for="stock">Stock Ideal</label>
+    <input type="number" name="stock" [(ngModel)]="stock">
+
+    <button (click)="ingresar()">Ingresar</button>
+    
+    {{mensajeIngreso}}
+</div>
